@@ -1,0 +1,38 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: radial-gradient(circle, hsl(200, 60%, 20%), hsl(200, 60%, 10%));
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+
+
+.roll-dice-button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: hsl(200, 60%, 50%);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: hsl(200, 60%, 40%);
+    }
+}
+
+.player-one, .player-two {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    background-color: hsl(200, 60%, 50%);
+    height: 3rem;
+    border-radius: .4rem;
+    margin-bottom: 2rem;
+}
